@@ -1,0 +1,39 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Rao vặt - Ze Ze</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <span>Chọn trang tin</span>
+    <select name="trangtin" id="trangtin">
+      <option value="phonhadat">Phố nhà đất</option>
+      <option value="dothidiaoc">Đô thị địa ốc</option>
+      <option value="tinbatdongsan">Tin bất động sản</option>
+    </select>
+    <section id="content">
+      <table>
+        <tr>
+          <td>Tiêu đề</td> <td><input type="text" id="tieuDe"></td>
+        </tr>
+        <tr>
+          <td>Nội dung</td>
+          <td><textarea name="noidung" id="noiDung" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+          <td>Diện tích</td>
+          <td><input type="text" id="dienTich"></td>
+        </tr>
+      </table>
+
+      <button id="nhapNoiDung">Nhập nội dung</button>
+      <button id="xoaTrang">Xóa trắng</button>
+    </section>
+  </body>
+</html>
+

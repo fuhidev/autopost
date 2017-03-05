@@ -1,0 +1,18 @@
+{
+  "name": "Đăng tin nhà đất",
+  "description": "Cừu xinh - Ze ze",
+  "version": "1.0",
+  "permissions": [
+    
+    "tabs", "http://*/*", "https://*/*",
+
+    "storage"
+  ],
+  "browser_action": {
+      "default_title": "Set this page's color.",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  
+  "manifest_version": 2
+}
